@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --forest-primary: #087F5B;
+    --fresh-green: #39A96B;
+    --leaf-green: #7BC96F;
+    --health-blue: #4DA3D9;
+    --bg-light: #F4FAF5;
+    --dark-forest: #173B32;
+    --xp-yellow: #F4C95D;
+    --activity-orange: #F4A261;
+    --success-green: #2E9D68;
+    --error-red: #E85D5D;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c3ddcf;
+  border-radius: 9999px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #244b41;
+}
+
+/* Pulse animation for live GPS */
+@keyframes ping-subtle {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.4); opacity: 0.2; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+.animate-ping-subtle {
+  animation: ping-subtle 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
