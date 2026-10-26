@@ -1,0 +1,6 @@
+{
+  "name": "VELORA - Lifestyle, Mind & Eco Assistant",
+  "description": "AI-powered personalized lifestyle assistant for habits, fitness, emotional well-being, GPS activity tracking, social proof, and eco impact.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
